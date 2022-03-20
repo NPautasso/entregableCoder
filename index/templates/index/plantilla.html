@@ -1,0 +1,23 @@
+{% extends 'index/index.html' %}
+
+{% block 'body_block' %}
+{% block 'header_block' %}
+    <h1>
+        Hola, esta es mi plantilla!!
+    </h1>
+{% endblock 'header_block' %}
+
+
+<body>
+    
+    {{nombre}}
+    
+    {% for valor in lista %}
+    <li>
+        {{valor}}
+    </li>
+    {% endfor %}
+    
+</body>
+
+{% endblock 'body_block' %}
